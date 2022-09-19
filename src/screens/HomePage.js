@@ -1,5 +1,5 @@
 
-import { Dimensions, StyleSheet, Text, View, ImageBackground, Image} from 'react-native';
+import { Dimensions, StyleSheet, Text, View, ImageBackground, Image, TouchableHighlight} from 'react-native';
 import React, { Component } from 'react';
 
 export default function HomePage() {
