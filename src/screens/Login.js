@@ -14,7 +14,7 @@ export default function Login() {
     const [date, setDate] = useState('');
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const localImage = require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/starnight.jpg');
+    const localImage = require('../../assets/starnight.jpg');
     return (
 <ImageBackground source={localImage }style={styles.container}>
 <Text style={styles.Text}> Login </Text> 

@@ -3,7 +3,7 @@ import { Dimensions, StyleSheet, Text, View, ImageBackground, Image} from 'react
 import React, { Component } from 'react';
 
 export default function HomePage() {
-    const localImage = require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/starnight.jpg');
+    const localImage = require('../../assets/starnight.jpg');
 return (
     <ImageBackground source={localImage }style={styles.container}>
     <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
@@ -19,18 +19,18 @@ return (
     }}
     underlayColor = '#ccc'
   >
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/aries.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.7, left:75}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/taurus.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.7, right: 75}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/gemini.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.6,right: 0}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/cancer.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.4,right:-30}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/leo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,right:-30}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/virgo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.6,right:0}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/libra.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.7,right: 75}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/scorpio.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.7,left: 75}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/sagittarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.6,left: 0}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/capricorn.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,left: -30}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/aquarius.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.4,left:-30}} />
-           <Image source={require('/Users/pollylinkogle-gabriel/Desktop/CFG Masters/BestGroup/assets/pisces.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.6,left: 0}} />
+           <Image source={require('../../assets/aries.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.7, left:75}} />
+           <Image source={require('../../assets/taurus.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.7, right: 75}} />
+           <Image source={require('../../assets/gemini.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.6,right: 0}} />
+           <Image source={require('../../assets/cancer.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.4,right:-30}} />
+           <Image source={require('../../assets/leo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,right:-30}} />
+           <Image source={require('../../assets/virgo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.6,right:0}} />
+           <Image source={require('../../assets/libra.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.7,right: 75}} />
+           <Image source={require('../../assets/scorpio.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.7,left: 75}} />
+           <Image source={require('../../assets/sagittarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.6,left: 0}} />
+           <Image source={require('../../assets/capricorn.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,left: -30}} />
+           <Image source={require('../../assets/aquarius.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.4,left:-30}} />
+           <Image source={require('../../assets/pisces.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.6,left: 0}} />
                   <Text style={styles.title}>Astrology</Text>
                   <Text style={styles.subheader}>Click on your star sign to get your daily horoscope</Text>
   </View>
