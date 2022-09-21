@@ -1,9 +1,10 @@
 
-import { Dimensions, StyleSheet, Text, View, ImageBackground, Image, TouchableHighlight} from 'react-native';
-import React, { Component } from 'react';
+import { Dimensions, StyleSheet, Text, View, ImageBackground, Image, TouchableOpacity} from 'react-native';
+import React, { Component, useState} from 'react';
 
-export default function HomePage() {
-    const localImage = require('../../assets/starnight.jpg');
+
+export default function HomePage({ navigation }) {
+    const localImage = require('../../assets/starnight.jpg')
 return (
     <ImageBackground source={localImage }style={styles.container}>
     <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
@@ -19,21 +20,59 @@ return (
     }}
     underlayColor = '#ccc'
   >
-           <Image source={require('../../assets/aries.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.7, left:75}} />
-           <Image source={require('../../assets/taurus.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.7, right: 75}} />
-           <Image source={require('../../assets/gemini.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.6,right: 0}} />
-           <Image source={require('../../assets/cancer.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.4,right:-30}} />
-           <Image source={require('../../assets/leo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,right:-30}} />
-           <Image source={require('../../assets/virgo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.6,right:0}} />
-           <Image source={require('../../assets/libra.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.7,right: 75}} />
-           <Image source={require('../../assets/scorpio.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.7,left: 75}} />
-           <Image source={require('../../assets/sagittarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.6,left: 0}} />
-           <Image source={require('../../assets/capricorn.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,left: -30}} />
-           <Image source={require('../../assets/aquarius.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.4,left:-30}} />
-           <Image source={require('../../assets/pisces.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.6,left: 0}} />
+
+
+        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "aries" })}>
+           <Image source={require('../../assets/aries.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.1, left:-70}} />
+           </ TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "taurus" })}>
+           <Image source={require('../../assets/taurus.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.1, right: -70}} />
+        </ TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "gemini" })}>
+           <Image source={require('../../assets/gemini.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.001,right: -135}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "cancer" })}>
+           <Image source={require('../../assets/cancer.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.01,right:-170}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "leo" })}>
+           <Image source={require('../../assets/leo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.2,right:-170}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "virgo" })}>
+           <Image source={require('../../assets/virgo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.38,right:-135}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "libra" })}>
+           <Image source={require('../../assets/libra.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,right: -60}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "scorpio" })}>
+           <Image source={require('../../assets/scorpio.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,left: -60}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "sagittarius" })}>
+           <Image source={require('../../assets/sagittarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.38,left:-135}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "capricorn" })}>
+           <Image source={require('../../assets/capricorn.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.2,left:-170}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "aquarius" })}>
+           <Image source={require('../../assets/aquarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.02,left:-170}} />
+           </TouchableOpacity>
+
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "pisces" })}>
+            <Image source={require('../../assets/pisces.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.001,left: -135}} />
+            </TouchableOpacity>  
+
                   <Text style={styles.title}>Astrology</Text>
                   <Text style={styles.subheader}>Click on your star sign to get your daily horoscope</Text>
-  </View>
+                  </View>
     </View>
     </ImageBackground>
 
