@@ -22,23 +22,23 @@ return (
   >
 
 
-        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "aries" })}>
+        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Aries" })}>
            <Image source={require('../../assets/aries.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.1, left:-70}} />
            </ TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "taurus" })}>
+        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Taurus" })}>
            <Image source={require('../../assets/taurus.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.1, right: -70}} />
         </ TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "gemini" })}>
+        <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Gemini" })}>
            <Image source={require('../../assets/gemini.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.001,right: -135}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "cancer" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Cancer" })}>
            <Image source={require('../../assets/cancer.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.01,right:-170}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "leo" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Leo" })}>
            <Image source={require('../../assets/leo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.2,right:-170}} />
            </TouchableOpacity>
 
@@ -46,27 +46,27 @@ return (
            <Image source={require('../../assets/virgo.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.38,right:-135}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "libra" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Libra" })}>
            <Image source={require('../../assets/libra.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,right: -60}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "scorpio" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Scorpio" })}>
            <Image source={require('../../assets/scorpio.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.4,left: -60}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "sagittarius" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign: "Sagittarius" })}>
            <Image source={require('../../assets/sagittarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.38,left:-135}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "capricorn" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "Capricorn" })}>
            <Image source={require('../../assets/capricorn.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.2,left:-170}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "aquarius" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "Aquarius" })}>
            <Image source={require('../../assets/aquarius.png')} style={{height:60,width:60,position:"absolute",top:Dimensions.get('window').width * 0.02,left:-170}} />
            </TouchableOpacity>
 
-           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "pisces" })}>
+           <TouchableOpacity onPress={() => navigation.navigate('Horoscope', { sign:  "Pisces" })}>
             <Image source={require('../../assets/pisces.png')} style={{height:60,width:60,position:"absolute",bottom:Dimensions.get('window').width * 0.001,left: -135}} />
             </TouchableOpacity>  
 
