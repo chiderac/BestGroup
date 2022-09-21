@@ -33,3 +33,18 @@ import axios from 'axios';
         <Text>{sign}</Text>
       )};
   
+      //       function getHoroscopes() {
+//     axios.get(`https://aztro.sameerkumar.website/?sign=${route}&day=today`)
+//     .then(function (response) {
+//       console.log(response);
+//     })
+//     .catch(err => {
+//       console.log(err);
+
+//     })
+//     .finally(() => setIsLoading(false));
+// }
+
+// useEffect(()=>{
+//     getHoroscopes();
+// },[])

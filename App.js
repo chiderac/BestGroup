@@ -1,8 +1,5 @@
 import HomePage from './src/screens/HomePage';
-import Login from './src/screens/Login';
 import Horoscope from './src/screens/Horoscope';
-import Aztro from './src/screens/ZodiacClass';
-import Zodiac from './src/screens/ZodiacFunctional'
 import "react-native-gesture-handler"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -22,19 +19,7 @@ const Stack = createNativeStackNavigator();
  <Stack.Screen style={styles.screen} name="Home" component={HomePage} 
 //  options={{ tabBarIcon: () => (<Image source={require("./assets/star.png")} style={{width: 20, height: 20}} />) }}
 />
-        <Stack.Screen style={styles.screen} name="Login" component={Login} 
-          // options={{
-          //             tabBarIcon: () => (<Image source={require("./assets/star.png")} style={{width: 20, height: 20}} />)}}
-                    />
-
         <Stack.Screen style={styles.screen} name="Horoscope" component={Horoscope} options={{
-                    tabBarIcon: () => (<Image source={require("./assets/star.png")} style={{width: 20, height: 20}} />)
-                }}/>
-         <Stack.Screen style={styles.screen} name="Taurus" component={Aztro} options={{
-                    tabBarIcon: () => (<Image source={require("./assets/star.png")} style={{width: 20, height: 20}} />)
-                }}/>
-
-          <Stack.Screen style={styles.screen} name="Zodiac" component={Zodiac} options={{
                     tabBarIcon: () => (<Image source={require("./assets/star.png")} style={{width: 20, height: 20}} />)
                 }}/>
       </Stack.Navigator>
